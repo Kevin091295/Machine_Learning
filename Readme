@@ -1,1 +1,53 @@
+Fraud Detection Dataset - Naive Byes Classifiers 
+
+Dataset Overview
+
+Purpose:
+
+Analyze transactions made by European cardholders in September 2013 to detect fraudulent activity.
+
+Timeframe:
+
+Includes transactions over two days.
+
+Dataset Characteristics
+
+Total Transactions: 284,807
+
+Fraudulent Transactions: 492 (0.172% of total)
+
+Class Imbalance: Highly unbalanced dataset, with the positive class (fraud) accounting for only 0.172%.
+
+Features
+
+Numerical Input Variables:
+
+All features except Time and Amount are transformed using PCA.
+
+PCA Features: V1, V2, …, V28
+
+Other Features:
+
+Time: Seconds elapsed between each transaction and the first transaction in the dataset.
+
+Amount: Transaction amount, usable for cost-sensitive learning.
+
+Class: Response variable indicating fraud:
+
+1 for fraud.
+
+0 for non-fraud.
+
+Important Considerations
+
+Confidentiality:
+
+Original features and background details are unavailable due to confidentiality concerns.
+
+Evaluation Metric:
+
+Recommended: Area Under the Precision-Recall Curve (AUPRC).
+
+Not Recommended: Accuracy from the confusion matrix, as it is not meaningful for unbalanced classification.
+
 
